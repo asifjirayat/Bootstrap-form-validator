@@ -13,12 +13,20 @@
     <title>Bootstrap form with jQuery Validator</title>
   </head>
   <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Bootstrap form with jQuery Validator</h1>
+        <h1 class="display-5">Bootstrap v 4.1</h1>
+        <p class="lead">Built by <a href="https://github.com/asifjirayat">Mohammadasif</a></p>
+      </div>
+    </div>
+
     <div class="container">
-      <form class="bootstrap-form">
+      <form class="bootstrap-form needs-validation" novalidate>
         <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="firstName">First name</label>
-            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" required>
+          <div class="col-md-12 mb-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name" autocomplete="off" required>
             <div class="valid-feedback">
               Looks good!
             </div>
@@ -26,9 +34,9 @@
               Looks bad!
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <label for="lastName">Last name</label>
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required>
+          <div class="col-md-12 mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" autocomplete="off" required>
             <div class="valid-feedback">
               Looks good!
             </div>
@@ -36,18 +44,74 @@
               Looks bad!
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-12 mb-3">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" autocomplete="off" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Looks bad!
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
             <label for="username">Username</label>
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroupPrepend">@</span>
               </div>
-              <input type="text" class="form-control" id="username" name="username" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+              <input type="text" class="form-control" id="username" name="username" placeholder="Username" aria-describedby="inputGroupPrepend" autocomplete="off" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
               <div class="invalid-feedback">
                 Looks bad!
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3 form-group">
+            <label for="select-one">Example select single</label>
+            <select class="form-control" id="select-one" name="select-one">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Looks bad!
+            </div>
+          </div>
+          <div class="col-md-12 mb-3 form-group">
+            <label for="select-multiple">Example select multiple</label>
+            <select multiple class="form-control" id="select-multiple" name="select-multiple">
+              <option selected>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Looks bad!
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="checkbox" required>
+              <label class="form-check-label" for="checkbox">
+                Agree to terms and conditions
+              </label>
+              <div class="valid-feedback">
+                Hmmm! So you agreed.
+              </div>
+              <div class="invalid-feedback">
+                You must agree before submitting.
               </div>
             </div>
           </div>
@@ -57,11 +121,16 @@
       </form>
     </div>
 
+    <div class="container-fluid footer">
+      <footer>
+        <p>Made with ❤️ by <a href="https://github.com/asifjirayat">Mohammadasif</a></p>
+      </footer>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/jquery-3.3.1.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/validator.js"></script>
   </body>
 </html>
