@@ -1,0 +1,18 @@
+.jumbotron {
+	text-align: center;
+}
+
+.footer {
+	background: #006bd5;
+    color: #ffffff;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.footer p a {
+	color: #ffffff;
+}
+
+.footer p a:hover {
+	color: #ffffff;
+}
