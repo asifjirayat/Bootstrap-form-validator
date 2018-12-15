@@ -23,6 +23,7 @@
     	switch(fieldType){
     		case 'text': 
     		case 'password':
+            case 'textarea':
                 validateText($(this));
                 break;
     		case 'email':
